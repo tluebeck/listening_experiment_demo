@@ -1,0 +1,14 @@
+name: listening_experiment_py
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - numpy >=1.15.4
+  - pip
+  - pyqt
+  - pyserial >=3.4
+  - pysoundfile
+  - python >=3.9
+  - scipy
+  - pip:
+    - jack-client >=0.4.4

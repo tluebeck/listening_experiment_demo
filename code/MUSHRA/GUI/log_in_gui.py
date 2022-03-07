@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'log_in_gui_anonymous.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Log_in(object):
+    def setupUi(self, Log_in):
+        Log_in.setObjectName("Log_in")
+        Log_in.resize(535, 314)
+        self.centralwidget = QtWidgets.QWidget(Log_in)
+        self.centralwidget.setObjectName("centralwidget")
+        self.start_btn = QtWidgets.QPushButton(self.centralwidget)
+        self.start_btn.setGeometry(QtCore.QRect(350, 250, 151, 32))
+        self.start_btn.setObjectName("start_btn")
+        self.line = QtWidgets.QFrame(self.centralwidget)
+        self.line.setGeometry(QtCore.QRect(40, 80, 461, 16))
+        self.line.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line.setObjectName("line")
+        self.title = QtWidgets.QLabel(self.centralwidget)
+        self.title.setGeometry(QtCore.QRect(70, 20, 411, 41))
+        self.title.setWordWrap(True)
+        self.title.setObjectName("title")
+        self.age_label = QtWidgets.QLabel(self.centralwidget)
+        self.age_label.setGeometry(QtCore.QRect(40, 135, 59, 16))
+        self.age_label.setObjectName("age_label")
+        self.age_box = QtWidgets.QComboBox(self.centralwidget)
+        self.age_box.setGeometry(QtCore.QRect(200, 129, 80, 32))
+        self.age_box.setObjectName("age_box")
+        self.age_box.addItem("")
+        self.age_box.addItem("")
+        self.age_box.addItem("")
+        self.age_box.addItem("")
+        self.age_box.addItem("")
+        self.age_box.addItem("")
+        self.VA_box = QtWidgets.QComboBox(self.centralwidget)
+        self.VA_box.setGeometry(QtCore.QRect(200, 180, 80, 32))
+        self.VA_box.setObjectName("VA_box")
+        self.VA_box.addItem("")
+        self.VA_box.addItem("")
+        self.VA_label = QtWidgets.QLabel(self.centralwidget)
+        self.VA_label.setGeometry(QtCore.QRect(40, 170, 131, 51))
+        self.VA_label.setWordWrap(True)
+        self.VA_label.setObjectName("VA_label")
+        self.no_experiments = QtWidgets.QComboBox(self.centralwidget)
+        self.no_experiments.setGeometry(QtCore.QRect(200, 250, 80, 32))
+        self.no_experiments.setObjectName("no_experiments")
+        self.no_experiments.addItem("")
+        self.no_experiments.addItem("")
+        self.no_experiments.addItem("")
+        self.no_experiments.addItem("")
+        self.Listen_experiment_label = QtWidgets.QLabel(self.centralwidget)
+        self.Listen_experiment_label.setGeometry(QtCore.QRect(40, 240, 131, 51))
+        self.Listen_experiment_label.setWordWrap(True)
+        self.Listen_experiment_label.setObjectName("Listen_experiment_label")
+        self.calibrate_btn = QtWidgets.QPushButton(self.centralwidget)
+        self.calibrate_btn.setGeometry(QtCore.QRect(350, 190, 151, 32))
+        self.calibrate_btn.setObjectName("calibrate_btn")
+        Log_in.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(Log_in)
+        QtCore.QMetaObject.connectSlotsByName(Log_in)
+
+    def retranslateUi(self, Log_in):
+        _translate = QtCore.QCoreApplication.translate
+        Log_in.setWindowTitle(_translate("Log_in", "GUI for SSR"))
+        self.start_btn.setText(_translate("Log_in", "Start Experiment"))
+        self.title.setText(_translate("Log_in", "Welcome and thank you for participating. Please anwser the questions below, and calibrate the headtracker!"))
+        self.age_label.setText(_translate("Log_in", "Age"))
+        self.age_box.setItemText(0, _translate("Log_in", "<20"))
+        self.age_box.setItemText(1, _translate("Log_in", "21-25"))
+        self.age_box.setItemText(2, _translate("Log_in", "26-30"))
+        self.age_box.setItemText(3, _translate("Log_in", "31-35"))
+        self.age_box.setItemText(4, _translate("Log_in", "36-40"))
+        self.age_box.setItemText(5, _translate("Log_in", ">40"))
+        self.VA_box.setItemText(0, _translate("Log_in", "No"))
+        self.VA_box.setItemText(1, _translate("Log_in", "Yes"))
+        self.VA_label.setText(_translate("Log_in", "Experience with virtual acoustics?"))
+        self.no_experiments.setItemText(0, _translate("Log_in", "0"))
+        self.no_experiments.setItemText(1, _translate("Log_in", "<3"))
+        self.no_experiments.setItemText(2, _translate("Log_in", "4-7"))
+        self.no_experiments.setItemText(3, _translate("Log_in", ">7"))
+        self.Listen_experiment_label.setText(_translate("Log_in", "How many listening experimences did you participated in?"))
+        self.calibrate_btn.setText(_translate("Log_in", "Calibrate"))
+
